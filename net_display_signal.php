@@ -20,9 +20,10 @@ $signalTime = $row['signal_time'];
         <body>
                 <div class="container">
                 <?php
-                echo "<h2>Pristupna točka: ".$routerName."</h2>";
+                echo "<h3>Pristupna točka: ".$routerName."</h3>";
                 echo "<p>Podaci od: ".$signalTime."</p>";
                 ?>
+                <div class="table-responsive">
                 <table class="table table-hover sortable">
                 <thead><tr><th data-defaultsort="asc" class="col-md-7">Korisnik</th><th class="col-md-5">Signal</th></tr></thead>
                 <tbody>
@@ -49,6 +50,7 @@ $signalTime = $row['signal_time'];
                 ?>
                 </tbody>
                 </table>
+                </div>
                 </div>
         </body>
 </html>
